@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A growing collection of ready to use components for the CSS framework Bootstrap 5"
+    />
+    <meta name="author" content="Holger Koenemann" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/theme.min.css" />
+
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url("./fonts/inter-v12-latin-300.woff2") format("woff2"),
+          url("./fonts/inter-v12-latin-300.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("./fonts/inter-v12-latin-500.woff2") format("woff2"),
+          url("./fonts/inter-v12-latin-500.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
+          url("./fonts/inter-v12-latin-700.woff") format("woff");
+      }
+
+      .footer-text {
+        font-size: 0.9rem;
+        color: #4e4e4e;
+      }
+
+      
+      .org-card p {
+        margin-top: 0.5rem;
+        font-weight: 500;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 4rem 0 2rem;
+      }
+
+      .stat-item {
+        padding: 1rem;
+        background: #c8e6c9;
+        border-radius: 10px;
+        width: 180px;
+      }
+
+      .stat-item h3 {
+        font-size: 2.5rem;
+        color: #1b5e20;
+      }
+
+      .stat-item p {
+        font-weight: bold;
+        color: #388e3c;
+      }
+      .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+      }
+      
+    </style>
+
+    <title>SkyGreen</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="navScroll"
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: #f9f9f9e0;padding: 24px"
+    >
+      <div class="container">
+        <a class="navbar-brand pe-4 fs-4" href="#top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-layers-half"
+            viewBox="0 0 16 16"
+          ></svg>
+          <span class="ms-1 fw-bold"
+            >SkyGreen<i class="bx bxs-tree-alt"></i
+          ></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">¿Qué hacemos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Árboles Registrados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workwithus">Regístrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info-legal.html">Más Información</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-dark text-white shadow rounded-0"
+                href="index.php"
+                
+                >Volver</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselArboles"
+      class="carousel slide mt-5 pt-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/naturaleza.jpg"
+            class="d-block w-100"
+            alt="Naturaleza"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Protege lo nuestro</h5>
+            <p>Los árboles son vida, sombra y futuro.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/protege.avif" class="d-block w-100" alt="Protección" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Respeto a la Naturaleza</h5>
+            <p>Cuidar el medio ambiente es responsabilidad de todos.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/arboles.jpg" class="d-block w-100" alt="Árboles" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Conoce tus derechos y deberes</h5>
+            <p>Infórmate sobre las leyes ambientales vigentes.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselArboles"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselArboles"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+   
+     <!-- Estadísticas Animadas -->
+     <section class="stats container">
+      <div class="stat-item">
+        <h3 id="stat1">0</h3>
+        <p>Árboles Plantados</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="stat2">0</h3>
+        <p>Hectáreas Reforestadas</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="stat3">0</h3>
+        <p>Voluntarios Activos</p>
+      </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="container py-4">
+      <section class="mb-5">
+        <h2>Leyes y Normativas en Bolivia</h2>
+        <ul>
+          <li><strong>Ley N° 1333 de Medio Ambiente (1992):</strong> Conserva recursos naturales, incluyendo árboles.</li>
+          <li><strong>Ley N° 300 (Ley de la Madre Tierra):</strong> Reconoce derechos de la naturaleza y fomenta la reforestación.</li>
+          <li><strong>Decreto Supremo N° 24453:</strong> Gestiona el uso sostenible del bosque.</li>
+          <li><strong>Ordenanzas municipales:</strong> Normativas locales sobre tala, poda y áreas verdes.</li>
+        </ul>
+      </section>
+
+      <section class="mb-5">
+        <h2>Prohibiciones Comunes</h2>
+        <ul>
+          <li>Tala sin permiso ambiental.</li>
+          <li>Quemas que afecten áreas forestales.</li>
+          <li>Eliminar árboles nativos/protegidos sin evaluación técnica.</li>
+        </ul>
+      </section>
+
+      <section class="mb-5">
+        <h2>Acciones Permitidas</h2>
+        <ul>
+          <li>Reforestación con especies nativas.</li>
+          <li>Poda o tala con autorización por seguridad.</li>
+          <li>Participar en programas de educación ambiental.</li>
+        </ul>
+      </section>
+
+      <section class="mb-5">
+        <h2>Recomendaciones</h2>
+        <ul>
+          <li>Consulta con autoridades ambientales locales.</li>
+          <li>Registra tus árboles plantados para monitoreo.</li>
+          <li>Participa en campañas de concienciación comunitaria.</li>
+        </ul>
+      </section>
+    <!-- Sección de Organizaciones -->
+    <section id="organizaciones" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Organizaciones que nos apoyan</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img
+              src="img/EMAVRA.jpg"
+              alt="Organización 1"
+              class="img-fluid mb-2"
+              style="max-height: 100px"
+            />
+            <p>EMAVRA</p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/FAN.svg"
+              alt="Organización 2"
+              class="img-fluid mb-2"
+              style="max-height: 100px"
+            />
+            <p>FNA</p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/ADMIN.avif"
+              alt="Organización 3"
+              class="img-fluid mb-2"
+              style="max-height: 100px"
+            />
+            <p>MINISTERIO AMBIENTAL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 SkyGreen. Todos los derechos reservados.</p>
+    </footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Animación de estadísticas
+  const stats = [
+    { id: "stat1", target: 1240 },
+    { id: "stat2", target: 320 },
+    { id: "stat3", target: 850 }
+  ];
+
+  stats.forEach(stat => {
+    let count = 0;
+    const element = document.getElementById(stat.id);
+    const increment = Math.ceil(stat.target / 100);
+    const interval = setInterval(() => {
+      count += increment;
+      if (count >= stat.target) {
+        count = stat.target;
+        clearInterval(interval);
+      }
+      element.textContent = count;
+    }, 30);
+  });
+</script>
+    <!-- Bootstrap JS -->
+   
+  </body>
+</html>
