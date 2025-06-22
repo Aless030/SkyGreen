@@ -4,26 +4,26 @@ const {
     calcularPorcentajeAdopcion,
   } = require('./testSuite');
   
-  // 🧪 Test Suite 1: Clasificación de árboles
+  // TODO1
   describe('clasificarArbol', () => {
     test('Retorna etiqueta correcta para árbol nativo', () => {
-      expect(clasificarArbol('nativo')).toBe('🌳 Árbol Nativo');
+      expect(clasificarArbol('nativo')).toBe('Árbol Nativo');
     });
   
     test('Retorna etiqueta correcta para árbol protegido', () => {
-      expect(clasificarArbol('protegido')).toBe('🛡️ Árbol Protegido');
+      expect(clasificarArbol('protegido')).toBe('Árbol Protegido');
     });
   
     test('Retorna etiqueta correcta para árbol peligroso', () => {
-      expect(clasificarArbol('peligroso')).toBe('⚠️ Árbol Peligroso');
+      expect(clasificarArbol('peligroso')).toBe('Árbol Peligroso');
     });
   
     test('Retorna desconocido para tipo no válido', () => {
-      expect(clasificarArbol('fantasma')).toBe('❓ Tipo Desconocido');
+      expect(clasificarArbol('fantasma')).toBe('Tipo Desconocido');
     });
   });
   
-  // 🧪 Test Suite 2: Validación de códigos QR
+  // TODO2
   describe('validarQR', () => {
     test('Código válido pasa la validación', () => {
       expect(validarQR('tree-123')).toBe(true);
@@ -38,7 +38,7 @@ const {
     });
   });
   
-  // 🧪 Test Suite 3: Cálculo de porcentaje de adopción
+  // TODO3
   describe('calcularPorcentajeAdopcion', () => {
     test('Calcula porcentaje correctamente', () => {
       expect(calcularPorcentajeAdopcion(25, 100)).toBe(25);

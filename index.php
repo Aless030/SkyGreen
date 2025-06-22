@@ -825,13 +825,15 @@ $conn->close();
       ">&times;</button>
       
       <h3 style="font-size: 14px; margin-bottom: 5px;">${arbol.especie}</h3>
-      
-      <img src="${arbol.fotoUrl}" alt="Foto del árbol" style="
-          width: 80%; 
-          height: 90px; 
-          border-radius: 5px; 
-          margin-bottom: 5px;
-      "/>
+
+      <a href="360.html"> <!-- Cambia esto al nombre del HTML al que quieres ir -->
+         <img src="${arbol.fotoUrl}" alt="Foto del árbol" style="
+         width: 80%; 
+         height: 90px; 
+         border-radius: 5px; 
+         margin-bottom: 5px;
+        "/>
+      </a>
       
       <p style="margin: 3px 0; font-size: 12px; line-height: 1.2;">
           <strong>Edad:</strong> ${arbol.edad} años

@@ -1,8 +1,8 @@
 function clasificarArbol(tipo) {
-    if (tipo === 'nativo') return '🌳 Árbol Nativo';
-    if (tipo === 'protegido') return '🛡️ Árbol Protegido';
-    if (tipo === 'peligroso') return '⚠️ Árbol Peligroso';
-    return '❓ Tipo Desconocido';
+    if (tipo === 'nativo') return 'Árbol Nativo';
+    if (tipo === 'protegido') return 'Árbol Protegido';
+    if (tipo === 'peligroso') return 'Árbol Peligroso';
+    return 'Tipo Desconocido';
   }
   
   function validarQR(qr) {
